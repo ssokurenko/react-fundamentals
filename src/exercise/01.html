@@ -9,13 +9,13 @@
 
 <html>
   <body>
-    <div id="root"></div>
     <script type="module">
-      const root = document.getElementById('root')
+      const root = document.createElement('div')
       const el = document.createElement('div')
+      root.append(el)
       el.className('container')
       el.textContent = 'Hello World'
-      root.append(el)
+      root.append(root)
     </script>
   </body>
 </html>
